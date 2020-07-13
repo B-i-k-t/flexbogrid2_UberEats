@@ -112,8 +112,7 @@ img{
 /* name_card style start */
 .wrap__name{
     padding: 80px;
-    background: url(../img/title-fon-lg.png) no-repeat;
- 
+    background: url(../img/title-fon-md.png) no-repeat;
 }
 .name__head{
     display: flex;
@@ -154,7 +153,22 @@ img{
     color: #FFFFFF;
     margin: 0;
 }
+@media all and (max-width: 971px){
+    .wrap__name{
+        padding: 80px 8px;
+        text-align: center;
+    }
+}
 @media all and (max-width: 575px){
+    .wrap__name{
+        padding: 131px 4px 0 8px;
+        background: url(../img/title-fon-xs.png) no-repeat;
+        height: 256px;
+        margin-bottom: 56px;
+    }
+    .name__head{
+        margin: 0 auto;
+    }
     .title__name{
         font-size: 24px;
         line-height: 28px;
@@ -249,6 +263,9 @@ img{
 .row__wrap{
     padding: 0 81px 0 87px;
 }
+.row{
+    margin: 0;
+}
 .content__title{
     font-size: 22px;
     line-height: 34px;
@@ -333,8 +350,14 @@ img{
         margin-bottom: 15px;
     }
     .card{
+        border-left: none;
+        border-right: none;
+        border-top: none;
         border-bottom: 1px solid rgba(117, 117, 117, 0.2);
         border-radius: 2px;   
+    }
+    .card__wrap{
+        margin-bottom: 0;
     }
     .bludo__desk{
         display: none;
