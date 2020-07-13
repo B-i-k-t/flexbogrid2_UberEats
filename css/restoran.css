@@ -122,6 +122,9 @@ img{
     list-style-type: none;
     padding: 32px 81px 29px 81px;
     margin: 0 auto;
+    margin-bottom: 56px;
+    background: #FFFFFF;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
 }
 .nav__item{
     margin-right: 40px;
@@ -144,7 +147,7 @@ img{
     }
 }
 
-/* menu for xs style */
+/* menu for xs style start */
 
 .nav__list-xs{
     display: block;
@@ -155,6 +158,7 @@ img{
     list-style: none;
     position: relative;
     text-align: center;
+
 }
 .nav__item-xs{
     display: none; 
@@ -183,8 +187,110 @@ img{
     color: #327430;
 }
 
+/* menu for xs style end */
 
 /*nav style end */
+
+/* restoran content style start */
+.row__wrap{
+    padding: 0 81px 0 87px;
+}
+.content__title{
+    font-size: 22px;
+    line-height: 34px;
+    color: #1D1D1D;
+    margin-bottom: 32px;
+    padding: 0 81px;
+}
+
+.card__wrap{
+    margin-bottom: 49px;
+}
+.card{
+    display: flex;
+    border: 1px solid rgba(117, 117, 117, 0.2);
+    border-radius: 2px;   
+}
+.card__text{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding-left: 16px;
+}
+.card__text:active, .card__text:focus, .card__text:hover{
+    background: #D8D8D8;
+}
+.card__title{
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D1D1D;
+    padding-top: 16px;
+    margin: 0;
+}
+.bludo__desk{
+    font-size: 13px;
+    line-height: 21px;
+    color: #626262;
+    margin: 0;
+
+}
+.cena{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    color: #1D1D1D;
+    margin-bottom: 16px;
+}
+.card__image{
+    width: 170px;
+    height: 160px;
+    background: #D8D8D8;
+    border-radius: 2px;
+}
+@media all and (max-width: 991px){
+    .card__wrap{
+        margin-bottom: 32px; 
+    }
+    .card__text{
+        padding-left: 24px;
+    }
+    .card__image{
+        width: 200px;
+        height: 160px;
+    }
+    .bludo__desk{
+        display: none;
+    }
+    .row__wrap{
+        padding: 0 8px;
+    }
+}
+@media all and (max-width: 575px){
+    .content__title{
+        display: none;
+    }
+    .card__image{
+        width: 102px;
+        height: 102px;
+        margin-top: 16px;
+    }
+    .cena{
+        margin-bottom: 15px;
+    }
+    .card{
+        border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+        border-radius: 2px;   
+    }
+    .bludo__desk{
+        display: none;
+    }
+    .row__wrap{
+        padding: 0 8px 0 4px;
+    }
+}
+
+/* restoran content style end */
 
 /* main style end */
 
