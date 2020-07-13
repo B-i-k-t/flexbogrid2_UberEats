@@ -109,6 +109,60 @@ img{
     }
 }
 
+/* name_card style start */
+.wrap__name{
+    padding: 80px;
+    background: url(../img/title-fon-lg.png) no-repeat;
+ 
+}
+.name__head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 38px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+    border-radius: 2px;
+    width: 400px;
+
+}
+.name__head-end{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.title__name{
+    font-size: 36px;
+    line-height: 42px;
+    color: #1D1D1D;
+    margin: 0;
+    padding-bottom: 54px;
+}
+.desc__name{
+    font-size: 14px;
+    line-height: 16px;
+    color: #626262;
+}
+.background__time{
+    background: #262626;
+    border-radius: 16px;
+    padding: 16px 8px;
+}
+.time__name{
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin: 0;
+}
+@media all and (max-width: 575px){
+    .title__name{
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+/* name_card style end */
+
 /* header style end */
 
 
